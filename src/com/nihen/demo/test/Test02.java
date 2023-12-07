@@ -2,6 +2,10 @@ package com.nihen.demo.test;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * @Description 测试冒泡排序
  * @Author zhuguanglong
@@ -70,7 +74,64 @@ public class Test02 {
     }
 
 
+    /**
+     * 输入十个数，比较最大值并且打印。
+     */
+    @Test
+    public void testShu(){
 
+//        ArrayList<Integer> arrayList = new ArrayList();
+//
+//
+//        int[] c = new int[30];
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("请输入十个数：");
+//
+//
+//
+//        for (int i=1;i<=10 ; i++){
+//
+//
+//            int a = scanner.nextInt();
+//
+//
+//
+//
+//        }
+//        for (int b : arrayList){
+//
+//        }
+
+
+
+        //1.定义循环变量
+        int i = 1;
+        //2.定义扫描器对象
+        Scanner scanner = new Scanner(System.in);
+        //3.提示用户输入第一个数字,并且同时将此数字赋值给最大值变量
+        System.out.println("请输入一个整数：");
+        int max = scanner.nextInt();
+
+        //4.再输入另外9个数字
+        System.out.println("请输入9个整数：");
+        do{
+            //4.1)得到输入的数字
+            int num = scanner.nextInt();
+            //4.2)比较输入的数字与上一次的最大值，如果当前输入的数字比最大
+            //值大，就最大值就是当前的数字
+            if(num > max){
+                max = num;
+            }
+            i++;
+        }while (i <= 9);
+        //5.打印最大值
+        System.out.println("max = " + max);
+
+
+
+    }
 
 
 
