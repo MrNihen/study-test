@@ -2,9 +2,7 @@ package com.nihen.demo.test;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @Description 测试冒泡排序
@@ -133,6 +131,18 @@ public class Test02 {
 
     }
 
+    @Test
+    public void testRandom(){
+        //定义一个随机数
+        Random random = new Random();
+        //循环打印十次随机数
+        for (int s=0;s<=10;s++){
+            //定义一个1到1000的随机数(random生成的随机数是左开右闭区间）
+            int a = random.nextInt(1000) + 1;
+            //打印随机数
+            System.out.print(a + " ");
+        }
+    }
 
 
     
