@@ -320,6 +320,27 @@ public class Test03 {
         }
     }
 
+    /**
+     * 测试Integer和Double的自动装箱和拆箱
+     */
+    @Test
+    public void test01(){
+
+        Integer A = 100;
+        Integer B = 100;
+        Integer C = 200;
+        Integer D = 200;
+        System.out.println(A == B);
+        System.out.println(C == D);
+
+        Double a = 100.0;
+        Double b = 100.0;
+        Double c = 100.0;
+        Double d = 100.0;
+        System.out.println(a == b);
+        System.out.println(c == d);
+    }
+
 
 
 }
